@@ -10,6 +10,7 @@ db.init_app(app)
 migrate = Migrate(app, db)
 
 
+
 @app.route('/restaurants', methods=['GET'])
 def get_restaurants():
     restaurants = Restaurant.query.all()
